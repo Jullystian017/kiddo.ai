@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiddo.ai — Cek Tumbuh Kembang & Potensi Karakter Anak</title>
+  <meta name="description"
+    content="Aplikasi Publik Cerdas berbasis AI untuk deteksi dini stunting dan pemetaan potensi karakter balita secara instan, gratis, dan tanpa daftar." />
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧸</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vanilla CSS Stylesheet -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+
+  <!-- Dynamic Animated Blobs in Background -->
+  <div class="blobs-container" aria-hidden="true">
+    <div class="blob blob-teal"></div>
+    <div class="blob blob-purple"></div>
+    <div class="blob blob-orange"></div>
+  </div>
+
+  <!-- Header Nav -->
+  <div class="navbar-wrapper" id="navbar-wrapper">
+    <header class="navbar container">
+      <div class="nav-logo" id="btn-logo-home" style="cursor: pointer;">
+        <svg class="logo-icon" width="36" height="36" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Premium Puzzle Face SVG Logo matching the reference image exactly -->
+          <path
+            d="M 30,20 H 50 A 15,15 0 0,1 80,20 H 80 A 10,10 0 0,1 90,30 V 50 A 15,15 0 0,1 90,80 V 80 A 10,10 0 0,1 80,90 H 30 A 10,10 0 0,1 20,80 V 30 A 10,10 0 0,1 30,20 Z"
+            fill="#F07167" />
+          <circle cx="45" cy="50" r="5" fill="#1d2a44" />
+          <circle cx="65" cy="50" r="5" fill="#1d2a44" />
+          <path d="M 48,63 Q 55,70 62,63" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 38,40 Q 42,33 46,37 Q 50,33 54,37 Q 58,33 62,37" stroke="#1d2a44" stroke-width="3"
+            stroke-linecap="round" fill="none" />
+        </svg>
+        <span class="logo-text">Kiddo<span class="logo-kids">.ai</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero-section" class="active">
+          <span class="nav-active-dot"></span>Home
+        </a>
+        <a href="#interaction-section">Skrining AI</a>
+        <a href="#testimonials-section">Testimoni</a>
+        <a href="#edu-section">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#interaction-section" class="btn-contact-outline">Mulai Skrining</a>
+      </div>
+    </header>
+  </div>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero-section">
+      <div class="hero-text animate-fade-in">
+        <h1 class="hero-title serif-title">Dukung Tumbuh Kembang &amp; Karakter Si Kecil</h1>
+        <p class="hero-sub">Akses skrining tumbuh kembang balita berbasis standar WHO dan pemetaan potensi karakter
+          secara mandiri — kapan saja, di mana saja.</p>
+
+        <div class="hero-buttons">
+          <a href="#interaction-section" class="btn-hero-solid">Mulai Skrining AI</a>
+          <a href="#interaction-section" class="btn-hero-outline">Pelajari Metode</a>
+        </div>
+
+        <div class="hero-features-grid">
+          <div class="feat-badge-item">
+            <span class="feat-badge-icon pink-bg">😊</span>
+            <span class="feat-badge-text">100% Sesi Rahasia &amp; Aman</span>
+          </div>
+          <div class="feat-badge-item">
+            <span class="feat-badge-icon yellow-bg">😎</span>
+            <span class="feat-badge-text">Standar Tinggi WHO</span>
+          </div>
+          <div class="feat-badge-item">
+            <span class="feat-badge-icon orange-bg">🥰</span>
+            <span class="feat-badge-text">Tanpa Registrasi &amp; Instan</span>
+          </div>
+          <div class="feat-badge-item">
+            <span class="feat-badge-icon green-bg">🤗</span>
+            <span class="feat-badge-text">Akses Publik 100% Gratis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-collage animate-float">
+        <!-- Organic Backdrop Wave Paths -->
+        <div class="backdrop-shapes" aria-hidden="true">
+          <!-- Hugging arms outline path matching the mockup illustration exactly -->
+          <svg class="arms-shape" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M 120 400 C 120 220, 240 100, 400 100 C 420 100, 430 115, 415 130 C 400 145, 380 140, 360 140 C 240 140, 180 220, 180 340"
+              stroke="#F07167" stroke-width="45" stroke-linecap="round" fill="none" opacity="0.85" />
+            <path d="M 450 350 C 450 260, 350 200, 280 230 C 265 236, 255 220, 270 210 C 330 170, 420 200, 420 280"
+              stroke="#8BBF9C" stroke-width="35" stroke-linecap="round" fill="none" opacity="0.85" />
+          </svg>
+        </div>
+
+        <!-- Floating Rotated Card 1 (Yellow Photo) -->
+        <div class="floating-collage-card card-yellow">
+          <img src="/static/assets/child_yellow.png" alt="Happy Smiling Toddler" class="collage-photo" />
+        </div>
+
+        <!-- Floating Rotated Card 2 (Green Photo) -->
+        <div class="floating-collage-card card-green">
+          <img src="/static/assets/parent_child_green.png" alt="Happy Mother and Child" class="collage-photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PREMIUM BENTO FEATURES SECTION -->
+    <section class="bento-features-section container" id="bento-features-section">
+      <div class="bento-card-wrapper">
+        <!-- Left Panel -->
+        <div class="bento-left-panel">
+          <!-- Decorative loop SVG -->
+          <div class="bento-decorative-bg" aria-hidden="true">
+            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="bento-loop-svg">
+              <path d="M 10 100 Q 80 20 120 100 T 230 100 Q 270 120 290 80" stroke="rgba(255, 255, 255, 0.9)"
+                stroke-width="8" stroke-linecap="round" fill="none" />
+              <circle cx="20" cy="100" r="18" fill="#FFC600" />
+              <path d="M 13 96 Q 16 93 19 96" stroke="#1d2a44" stroke-width="2.5" stroke-linecap="round" fill="none" />
+              <path d="M 21 96 Q 24 93 27 96" stroke="#1d2a44" stroke-width="2.5" stroke-linecap="round" fill="none" />
+              <path d="M 16 103 Q 20 107 24 103" stroke="#1d2a44" stroke-width="2.5" stroke-linecap="round"
+                fill="none" />
+            </svg>
+          </div>
+
+          <h2 class="bento-title serif-title">Solusi Cerdas Tumbuh Kembang Si Kecil</h2>
+          <p class="bento-subtitle">Kami menyediakan skrining berbasis AI tepercaya untuk mendeteksi dini risiko
+            stunting dan memetakan kepribadian balita secara instan, aman, dan 100% gratis.</p>
+          <a href="#interaction-section" class="btn-bento-cta">Mulai Skrining Sekarang</a>
+        </div>
+
+        <!-- Right Panel (Bento Grid) -->
+        <div class="bento-right-panel">
+          <!-- Top Row: Wide Yellow Card -->
+          <div class="bento-grid-item bento-yellow-card">
+            <div class="bento-item-text">
+              <h3>Skrining Gizi 24/7</h3>
+              <p>Pantau tinggi badan balita Anda kapan saja secara mandiri dengan standar WHO dan algoritme klasifikasi
+                KNN yang cepat.</p>
+            </div>
+            <div class="bento-item-img-container">
+              <img src="/static/assets/doctor_pastel.png" alt="Friendly Pediatrician" class="bento-doctor-img" />
+            </div>
+          </div>
+
+          <!-- Bottom Row: 2 Split Cards -->
+          <div class="bento-bottom-row">
+            <!-- Bottom Left: Blue Card -->
+            <div class="bento-grid-item bento-blue-card">
+              <div class="bento-item-text">
+                <h3>Akurasi KNN Teruji</h3>
+                <p>Model kecerdasan buatan terlatih mengukur data fisik anak Anda dengan tingkat akurasi tinggi untuk
+                  deteksi dini stunting.</p>
+              </div>
+              <div class="bento-card-bg-icon">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="40" stroke="rgba(14, 165, 233, 0.15)" stroke-width="4" />
+                  <ellipse cx="50" cy="50" rx="40" ry="15" stroke="rgba(14, 165, 233, 0.15)" stroke-width="4" />
+                  <ellipse cx="50" cy="50" rx="15" ry="40" stroke="rgba(14, 165, 233, 0.15)" stroke-width="4" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Bottom Right: Pink Card -->
+            <div class="bento-grid-item bento-pink-card">
+              <div class="bento-item-text">
+                <h3>Potensi Karakter</h3>
+                <p>Mengenali kepribadian Introvert atau Extrovert balita untuk menentukan pola asuh harian yang penuh
+                  kasih dan tepat.</p>
+              </div>
+              <div class="bento-card-bg-icon">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 35 C 12 15, 45 15, 50 35 C 55 15, 88 15, 88 35 C 88 60, 50 85, 50 85 C 50 85, 12 60, 12 35 Z"
+                    fill="rgba(244, 63, 94, 0.1)" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE AI INPUT WIZARD -->
+    <section class="interaction-section" id="interaction-section">
+      <div class="wizard-panel card-peach">
+        <div class="wizard-panel-header text-center">
+          <h2 class="serif-title">You Don't Have to Face It Alone</h2>
+
+          <!-- Floating Interactive Capsule Tags -->
+          <div class="capsule-tags-container">
+            <div class="capsule-tag animate-bounce-soft">
+              <span class="capsule-emoji">🍼</span>
+              <span>Khawatir risiko Stunting?</span>
+            </div>
+            <div class="capsule-tag animate-bounce-soft-delay-1">
+              <span class="capsule-emoji">🧠</span>
+              <span>Ingin mengenali kepribadian si kecil?</span>
+            </div>
+            <div class="capsule-tag animate-bounce-soft-delay-2">
+              <span class="capsule-emoji">🥗</span>
+              <span>Butuh tips gizi &amp; pola asuh terbaik?</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wizard-box card-white-blend">
+          <!-- Tab Navigation Controls -->
+          <div class="tab-nav" role="tablist">
+            <button class="tab-btn active" id="tab-stunting" role="tab" aria-selected="true"
+              aria-controls="panel-stunting">
+              <span class="btn-emoji">🍼</span>
+              <div class="tab-btn-text">
+                <strong>Deteksi Stunting</strong>
+                <span>Kesehatan &amp; Gizi Fisik</span>
+              </div>
+            </button>
+            <button class="tab-btn" id="tab-personality" role="tab" aria-selected="false"
+              aria-controls="panel-personality">
+              <span class="btn-emoji">🧠</span>
+              <div class="tab-btn-text">
+                <strong>Potensi Karakter</strong>
+                <span>Kepribadian Introvert/Extrovert</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- TAB CONTENT 1: STUNTING -->
+          <div class="tab-panel" id="panel-stunting" role="tabpanel" aria-labelledby="tab-stunting">
+            <form id="form-stunting" novalidate>
+              <div class="form-grid">
+
+                <!-- Jenis Kelamin -->
+                <div class="input-group full-width">
+                  <label class="input-label">Jenis Kelamin Anak</label>
+                  <div class="gender-selector">
+                    <label class="gender-option">
+                      <input type="radio" name="jenis_kelamin" value="laki-laki" checked />
+                      <div class="gender-card">
+                        <span class="gender-emoji">👦</span>
+                        <div class="gender-info">
+                          <strong>Laki-laki</strong>
+                          <span>Putra</span>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="gender-option">
+                      <input type="radio" name="jenis_kelamin" value="perempuan" />
+                      <div class="gender-card">
+                        <span class="gender-emoji">👧</span>
+                        <div class="gender-info">
+                          <strong>Perempuan</strong>
+                          <span>Putri</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Umur -->
+                <div class="input-group">
+                  <label class="input-label" for="stunting-umur">Umur Balita (Bulan)</label>
+                  <div class="stepper-wrapper">
+                    <button type="button" class="step-btn" id="btn-umur-min" aria-label="Kurangi umur">-</button>
+                    <input type="number" id="stunting-umur" name="umur" min="0" max="60" value="24" required />
+                    <button type="button" class="step-btn" id="btn-umur-plus" aria-label="Tambah umur">+</button>
+                    <span class="input-addon">Bulan</span>
+                  </div>
+                  <span class="helper-text">Batas usia balita terpantau stunting: 0 - 60 Bulan.</span>
+                </div>
+
+                <!-- Tinggi Badan -->
+                <div class="input-group">
+                  <label class="input-label" for="stunting-tinggi">Tinggi Badan (cm)</label>
+                  <div class="stepper-wrapper">
+                    <button type="button" class="step-btn" id="btn-tinggi-min" aria-label="Kurangi tinggi">-</button>
+                    <input type="number" id="stunting-tinggi" name="tinggi" min="30" max="150" step="0.5" value="85.0"
+                      required />
+                    <button type="button" class="step-btn" id="btn-tinggi-plus" aria-label="Tambah tinggi">+</button>
+                    <span class="input-addon">cm</span>
+                  </div>
+                  <span class="helper-text">Rata-rata tinggi balita ideal 2 tahun berkisar 80-92 cm.</span>
+                </div>
+
+                <!-- Berat Badan (For completeness but doesn't affect model logic directly) -->
+                <div class="input-group full-width">
+                  <label class="input-label" for="stunting-berat">Berat Badan Si Kecil (kg) <span
+                      class="optional-tag">(Opsional)</span></label>
+                  <div class="input-slider-wrapper">
+                    <input type="range" id="stunting-berat" name="berat" min="2" max="30" step="0.1" value="12.0"
+                      class="slider" />
+                    <div class="slider-labels">
+                      <span>2.0 kg</span>
+                      <span class="slider-live-value">⚖️ <strong id="val-stunting-berat">12.0</strong> kg</span>
+                      <span>30.0 kg</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-teal btn-lg btn-block" id="btn-submit-stunting">
+                  <span class="btn-content">
+                    <span class="btn-emoji">✨</span>
+                    <span>Analisis Gizi & Stunting</span>
+                  </span>
+                  <div class="spinner" id="spinner-stunting"></div>
+                </button>
+              </div>
+            </form>
+
+            <!-- SKELETON / LOADING FOR STUNTING -->
+            <div id="processing-stunting-skeleton" class="skeleton-results text-center"
+              style="display: none; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px dashed rgba(42, 157, 143, 0.2);">
+              <div class="card bg-blur shimmer" style="border-color: rgba(42, 157, 143, 0.2);">
+                <div class="skeleton-avatar" style="background-color: var(--teal-light);">🍼</div>
+                <div class="skeleton-line-long"></div>
+                <div class="skeleton-line-medium"></div>
+                <div class="skeleton-grid">
+                  <div class="skeleton-block"></div>
+                  <div class="skeleton-block"></div>
+                </div>
+                <p class="skeleton-label" style="color: var(--teal-dark);">AI sedang memproses kecocokan tinggi badan
+                  terhadap standar WHO...</p>
+              </div>
+            </div>
+
+            <!-- DYNAMIC STUNTING RESULTS SECTION (TEAL THEMED) -->
+            <section class="results-section results-stunting-section" id="results-stunting-section"
+              style="display: none; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px dashed rgba(42, 157, 143, 0.2);">
+              <div class="section-header text-center">
+                <h2 style="color: var(--teal-dark); font-size: 28px;"><span class="emoji">📊</span> Hasil Analisis
+                  Tumbuh Kembang (Stunting)</h2>
+                <p>Laporan komprehensif gizi fisik si kecil berdasarkan kurva pertumbuhan tinggi badan WHO.</p>
+              </div>
+
+              <div class="bento-grid">
+
+                <!-- KOTAK A1: STATUS GIZI -->
+                <div class="bento-box box-full color-card-normal" id="box-stunting-result">
+                  <div class="box-badge">🍼 Status Gizi Balita</div>
+                  <div class="box-main-content">
+                    <div class="status-indicator">
+                      <span class="status-dot"></span>
+                      <span class="status-title">Status Pertumbuhan:</span>
+                      <strong class="status-result" id="res-stunting-label">Menunggu Input</strong>
+                    </div>
+
+                    <p class="status-desc" id="res-stunting-advice">Silakan isi formulir gizi di atas terlebih dahulu
+                      untuk mendapatkan status stunting anak Anda.</p>
+
+                    <!-- WHO GROWTH PITA METER -->
+                    <div class="growth-meter-wrapper">
+                      <div class="meter-label-top">Pita Parameter Status Gizi Anak (Standar WHO)</div>
+                      <div class="meter-bar">
+                        <div class="meter-section sg-pendek" data-tooltip="Sangat Pendek"></div>
+                        <div class="meter-section pendek" data-tooltip="Pendek"></div>
+                        <div class="meter-section normal" data-tooltip="Normal"></div>
+                        <div class="meter-section tinggi" data-tooltip="Tinggi"></div>
+                        <div class="meter-section sg-tinggi" data-tooltip="Sangat Tinggi"></div>
+                        <div class="meter-pin" id="stunting-meter-pin" style="left: 50%;"></div>
+                      </div>
+                      <div class="meter-labels">
+                        <span>Sangat Pendek</span>
+                        <span>Normal</span>
+                        <span>Sangat Tinggi</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- KOTAK A2: REKOMENDASI NUTRISI & AKTIVITAS FISIK -->
+                <div class="bento-box box-full" id="box-recom-stunting" style="border-color: rgba(42, 157, 143, 0.2);">
+                  <div class="box-badge" style="background-color: var(--teal-light); color: var(--teal-dark);">🥗
+                    Panduan Gizi &amp; Stimulasi Fisik</div>
+                  <div class="box-main-content">
+                    <div class="recom-grid">
+                      <div class="recom-column">
+                        <h4 class="recom-section-title" style="border-bottom-color: rgba(42, 157, 143, 0.2);"><span
+                            class="emoji">🍎</span> Saran Menu Pemulihan Gizi</h4>
+                        <ul class="recom-list" id="res-recom-menu">
+                          <li>Menu tinggi kalori, kalsium, zat besi, dan zat pembangun protein hewani.</li>
+                        </ul>
+                      </div>
+                      <div class="recom-column">
+                        <h4 class="recom-section-title" style="border-bottom-color: rgba(42, 157, 143, 0.2);"><span
+                            class="emoji">🏃</span> Stimulasi Motorik &amp; Olahraga</h4>
+                        <ul class="recom-list" id="res-recom-stunting-activities">
+                          <li>Stimulasi fisik balita luar ruangan untuk merangsang lempeng pertumbuhan.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="results-actions text-center" style="margin-top: 2rem;">
+                <button type="button" class="btn btn-outline btn-reset-stunting"
+                  style="border-color: var(--teal); color: var(--teal);">↩ Reset & Ulangi Deteksi Stunting</button>
+              </div>
+            </section>
+          </div>
+
+          <!-- TAB CONTENT 2: PERSONALITY -->
+          <div class="tab-panel" id="panel-personality" role="tabpanel" aria-labelledby="tab-personality"
+            style="display: none;">
+            <form id="form-personality" novalidate>
+              <div class="personality-wizard-info">
+                <span class="emoji">🔮</span>
+                <p>Jawab 7 kuesioner perilaku balita berikut untuk memetakan kepribadian introvert/extrovert.</p>
+              </div>
+
+              <div class="question-list">
+
+                <!-- Q1: Time spent alone -->
+                <div class="q-item card">
+                  <div class="q-header">
+                    <span class="q-number">1</span>
+                    <span class="q-title">🏠 Berapa jam rata-rata si kecil nyaman bermain sendiri dalam sehari?</span>
+                  </div>
+                  <div class="slider-container">
+                    <input type="range" name="Time_spent_Alone" min="0" max="11" step="1" value="3"
+                      class="slider slider-purple" />
+                    <div class="slider-labels">
+                      <span>Lebih suka ditemani (0 jam)</span>
+                      <span class="slider-live-value text-purple">⚡ <strong id="val_Time_spent_Alone">3</strong> jam
+                        sendiri</span>
+                      <span>Sangat betah sendiri (11 jam)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q2: Stage fear -->
+                <div class="q-item card">
+                  <div class="q-header">
+                    <span class="q-number">2</span>
+                    <span class="q-title">🎤 Bagaimana respon si kecil ketika dihadapkan atau tampil di depan umum/orang
+                      banyak?</span>
+                  </div>
+                  <div class="pill-group">
+                    <label class="pill-option">
+                      <input type="radio" name="Stage_fear" value="0" checked />
+                      <div class="pill-card">
+                        <span class="pill-emoji">😎</span>
+                        <span>Percaya diri, santai & tersenyum</span>
+                      </div>
+                    </label>
+                    <label class="pill-option">
+                      <input type="radio" name="Stage_fear" value="1" />
+                      <div class="pill-card">
+                        <span class="pill-emoji">😰</span>
+                        <span>Malu, gugup, atau mencari pelukan bunda</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Q3: Social event attendance -->
+                <div class="q-item card">
+                  <div class="q-header">
+                    <span class="q-number">3</span>
+                    <span class="q-title">🎉 Seberapa sering si kecil diajak atau menghadiri acara sosial/perkumpulan
+                      tetangga seminggu?</span>
+                  </div>
+                  <div class="slider-container">
+                    <input type="range" name="Social_event_attendance" min="0" max="10" step="1" value="2"
+                      class="slider slider-purple" />
+                    <div class="slider-labels">
+                      <span>Hampir Tidak Pernah (0)</span>
+                      <span class="slider-live-value text-purple">📅 <strong id="val_Social_event_attendance">2</strong>
+                        kali seminggu</span>
+                      <span>Sangat Sering (10+)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q4: Going outside -->
+                <div class="q-item card">
+                  <div class="q-header">
+                    <span class="q-number">4</span>
+                    <span class="q-title">🚶 Seberapa senang si kecil diajak berjalan-jalan keluar rumah dalam
+                      seminggu?</span>
+                  </div>
+                  <div class="slider-container">
+                    <input type="range" name="Going_outside" min="0" max="7" step="1" value="3"
+                      class="slider slider-purple" />
+                    <div class="slider-labels">
+                      <span>0 Hari</span>
+                      <span class="slider-live-value text-purple">🌤️ <strong id="val_Going_outside">3</strong> hari
+                        seminggu</span>
+                      <span>Setiap hari (7)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q5: Drained after socializing -->
+                <div class="q-item card">
+                  <div class="q-header">
+                    <span class="q-number">5</span>
+                    <span class="q-title">😴 Bagaimana kondisi energi si kecil setelah berkumpul lama dengan banyak
+                      teman baru?</span>
+                  </div>
+                  <div class="pill-group">
+                    <label class="pill-option">
+                      <input type="radio" name="Drained_after_socializing" value="0" checked />
+                      <div class="pill-card">
+                        <span class="pill-emoji">⚡</span>
+                        <span>Tetap aktif, riang & bersemangat</span>
+                      </div>
+                    </label>
+                    <label class="pill-option">
+                      <input type="radio" name="Drained_after_socializing" value="1" />
+                      <div class="pill-card">
+                        <span class="pill-emoji">🪫</span>
+                        <span>Tampak lelah, rewel, atau lekas mengantuk</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Q6: Friends circle size -->
+                <div class="q-item card">
+                  <div class="q-header">
+                    <span class="q-number">6</span>
+                    <span class="q-title">👥 Berapa banyak teman akrab/bermain di sekitar rumah yang ia ingat atau
+                      miliki saat ini?</span>
+                  </div>
+                  <div class="slider-container">
+                    <input type="range" name="Friends_circle_size" min="0" max="15" step="1" value="5"
+                      class="slider slider-purple" />
+                    <div class="slider-labels">
+                      <span>Lebih suka bermain mandiri (0)</span>
+                      <span class="slider-live-value text-purple">🫂 <strong id="val_Friends_circle_size">5</strong>
+                        teman dekat</span>
+                      <span>Banyak sekali (15+)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q7: Post frequency (interpreted as: frequency of showing off achievements or showing photos to others) -->
+                <div class="q-item card">
+                  <div class="q-header">
+                    <span class="q-number">7</span>
+                    <span class="q-title">📱 Seberapa sering si kecil suka berfoto, memamerkan hasil gambarnya, atau
+                      bernyanyi di depan kamera/ponsel?</span>
+                  </div>
+                  <div class="slider-container">
+                    <input type="range" name="Post_frequency" min="0" max="10" step="1" value="4"
+                      class="slider slider-purple" />
+                    <div class="slider-labels">
+                      <span>Sangat Pemalu (0)</span>
+                      <span class="slider-live-value text-purple">✨ <strong id="val_Post_frequency">4</strong> kali
+                        seminggu</span>
+                      <span>Sangat Narsis/Aktif (10)</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-purple btn-lg btn-block" id="btn-submit-personality">
+                  <span class="btn-content">
+                    <span class="btn-emoji">🔮</span>
+                    <span>Analisis Karakter & Kepribadian</span>
+                  </span>
+                  <div class="spinner" id="spinner-personality"></div>
+                </button>
+              </div>
+            </form>
+
+            <!-- SKELETON / LOADING FOR PERSONALITY -->
+            <div id="processing-personality-skeleton" class="skeleton-results text-center"
+              style="display: none; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px dashed rgba(108, 92, 231, 0.2);">
+              <div class="card bg-blur shimmer" style="border-color: rgba(108, 92, 231, 0.2);">
+                <div class="skeleton-avatar" style="background-color: var(--purple-light);">🧠</div>
+                <div class="skeleton-line-long"></div>
+                <div class="skeleton-line-medium"></div>
+                <div class="skeleton-grid">
+                  <div class="skeleton-block"></div>
+                  <div class="skeleton-block"></div>
+                </div>
+                <p class="skeleton-label" style="color: var(--purple-dark);">AI sedang memproses kecenderungan psikologi
+                  dan grafik karakter balita...</p>
+              </div>
+            </div>
+
+            <!-- DYNAMIC PERSONALITY RESULTS SECTION (PURPLE THEMED) -->
+            <section class="results-section results-personality-section" id="results-personality-section"
+              style="display: none; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px dashed rgba(108, 92, 231, 0.2);">
+              <div class="section-header text-center">
+                <h2 style="color: var(--purple-dark); font-size: 28px;"><span class="emoji">🔮</span> Hasil Analisis
+                  Potensi Karakter AI</h2>
+                <p>Laporan psikologi kepribadian Introvert / Extrovert balita berdasarkan kuesioner kebiasaan
+                  sehari-hari.</p>
+              </div>
+
+              <div class="bento-grid">
+
+                <!-- KOTAK B1: TIPE KEPRIBADIAN -->
+                <div class="bento-box box-full" id="box-personality-result"
+                  style="border-color: rgba(108, 92, 231, 0.25);">
+                  <div class="box-badge" style="background-color: var(--purple-light); color: var(--purple-dark);">🧠
+                    Kepribadian AI</div>
+                  <div class="box-main-content text-center">
+                    <div class="personality-avatar" id="res-personality-emoji">🤔</div>
+                    <h3 class="personality-title" id="res-personality-label" style="color: var(--purple);">Menunggu
+                      Analisis</h3>
+                    <p class="personality-desc" id="res-personality-desc">AI akan memetakan kecenderungan psikologis
+                      anak setelah Anda menyelesaikan kuesioner singkat.</p>
+
+                    <!-- Proba bar -->
+                    <div class="proba-container" id="res-personality-proba-wrap"
+                      style="display: none; max-width: 600px; margin: 24px auto 0 auto;">
+                      <div class="proba-bar-header">
+                        <span>Tingkat Keyakinan AI</span>
+                        <strong id="res-personality-confidence" style="color: var(--purple-dark);">0%</strong>
+                      </div>
+                      <div class="proba-track">
+                        <div class="proba-fill" id="res-personality-bar"
+                          style="width: 0%; background-color: var(--purple);"></div>
+                      </div>
+
+                      <div class="proba-split-grid">
+                        <div class="proba-item">
+                          <span class="label">Introvert</span>
+                          <strong class="text-purple" id="res-intro-prob" style="color: var(--purple-dark);">0%</strong>
+                        </div>
+                        <div class="proba-item">
+                          <span class="label">Extrovert</span>
+                          <strong class="text-indigo" id="res-extro-prob" style="color: #4933E1;">0%</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- KOTAK B2: POLA ASUH & STIMULASI MENTAL -->
+                <div class="bento-box box-full" id="box-recom-personality"
+                  style="border-color: rgba(108, 92, 231, 0.25);">
+                  <div class="box-badge" style="background-color: var(--purple-light); color: var(--purple-dark);">🎨
+                    Panduan Pola Asuh &amp; Stimulasi</div>
+                  <div class="box-main-content">
+                    <div class="recom-grid">
+                      <div class="recom-column">
+                        <h4 class="recom-section-title" style="border-bottom-color: rgba(108, 92, 231, 0.2);"><span
+                            class="emoji">🎨</span> Stimulasi Bermain Kreatif</h4>
+                        <ul class="recom-list" id="res-recom-personality-activities">
+                          <li>Metode bermain yang sesuai dengan kenyamanan mental si kecil.</li>
+                        </ul>
+                      </div>
+                      <div class="recom-column">
+                        <h4 class="recom-section-title" style="border-bottom-color: rgba(108, 92, 231, 0.2);"><span
+                            class="emoji">🌟</span> Panduan Komunikasi Orang Tua</h4>
+                        <ul class="recom-list" id="res-recom-parenting">
+                          <li>Tips pola asuh harian untuk mendekatkan jalinan emosi orang tua.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="results-actions text-center" style="margin-top: 2rem;">
+                <button type="button" class="btn btn-outline btn-reset-personality"
+                  style="border-color: var(--purple); color: var(--purple);">↩ Reset & Ulangi Kuesioner
+                  Karakter</button>
+              </div>
+            </section>
+          </div>
+        </div> <!-- Close .wizard-box -->
+
+      </div> <!-- Close .wizard-panel -->
+    </section>
+
+    <!-- ALERT ERROR BOX -->
+    <div class="error-container container" id="error-box" style="display: none;">
+      <div class="error-card card">
+        <span class="err-icon">⚠️</span>
+        <div class="err-content">
+          <strong>Terjadi Hambatan Kecil</strong>
+          <p id="error-message">Mohon maaf, sepertinya ada sedikit kendala. Silakan coba kembali sesaat lagi.</p>
+        </div>
+        <button class="btn-close" id="btn-close-error" aria-label="Tutup pesan error">&times;</button>
+      </div>
+    </div>
+
+    <!-- DYNAMIC 3D CURVED TESTIMONIALS SECTION -->
+    <section class="testimonials-section container" id="testimonials-section">
+      <div class="testimonials-header text-center">
+        <h2 class="serif-title">What Our Parents Say</h2>
+      </div>
+
+      <div class="testimonials-slider-container">
+        <div class="testimonials-track" id="testimonials-track">
+
+          <!-- Card 1 -->
+          <div class="testimonial-card card-blue" data-index="0">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Skrining stunting di Kiddo.ai sangat membantu saya memantau gizi si kecil tanpa
+              harus antre lama di puskesmas. Hasilnya cepat dan sarannya sangat praktis!"</p>
+            <h4 class="author-name">Bunda Ratna</h4>
+            <span class="author-location">Jakarta, Indonesia</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card card-pink" data-index="1">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Sangat bersyukur ada alat tes kepribadian anak gratis seperti ini. Kuesionernya
+              ringkas dan hasil analisis perilakunya sangat cocok dengan karakter anak saya yang introvert."</p>
+            <h4 class="author-name">Ayah Rian</h4>
+            <span class="author-location">Bandung, Jawa Barat</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card card-blue" data-index="2">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Panduan menu gizi pemulihan pasca deteksi stunting sangat lengkap. Si kecil sekarang
+              suka makan sup hati ayam wortel yang disarankan Kiddo.ai!"</p>
+            <h4 class="author-name">Bunda Elina</h4>
+            <span class="author-location">Surabaya, Jawa Timur</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card card-pink" data-index="3">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Rekomendasi pola asuh anak extrovert benar-benar membantu saya mengarahkan energi
+              aktif putra saya secara positif di luar rumah. Desain websitenya juga cantik sekali."</p>
+            <h4 class="author-name">Bunda Sherly</h4>
+            <span class="author-location">Medan, Sumatra Utara</span>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="testimonial-card card-blue" data-index="4">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Sebagai orang tua baru, Kiddo.ai adalah penyelamat! Membantu mendeteksi risiko
+              tumbuh kembang dan memberikan rasa tenang dengan penjelasan yang edukatif."</p>
+            <h4 class="author-name">Ayah Handoko</h4>
+            <span class="author-location">Yogyakarta, DIY</span>
+          </div>
+
+        </div>
+
+        <!-- Testimonial Slider Controls -->
+        <div class="testimonials-controls">
+          <button class="nav-arrow-btn arrow-prev" id="btn-testimonial-prev" aria-label="Previous Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+
+          <div class="testimonials-dots" id="testimonials-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+          </div>
+
+          <button class="nav-arrow-btn arrow-next" id="btn-testimonial-next" aria-label="Next Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DYNAMIC EDUCATIONAL FAQ SECTION -->
+    <section class="edu-section container" id="edu-section">
+      <div class="faq-layout-wrapper">
+
+        <!-- Left Column: Title & Adorable Illustration Stack -->
+        <div class="faq-left-column">
+          <h2 class="serif-title">Frequently Asked Questions</h2>
+
+          <div class="faq-left-illustration">
+            <svg viewBox="0 0 450 350" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-svg-graphic">
+              <!-- Base Soft Shadow -->
+              <ellipse cx="225" cy="310" rx="170" ry="15" fill="#1d2a44" opacity="0.04" />
+
+              <!-- 1. The Large Yellow Smiling Circle -->
+              <g class="illustration-yellow-circle animate-wobble-subtle">
+                <circle cx="210" cy="180" r="100" fill="#ffb703" />
+                <!-- Closed Smiling Eyes -->
+                <path d="M 148 152 Q 163 138 178 152" stroke="#1d2a44" stroke-width="7" stroke-linecap="round"
+                  fill="none" />
+                <path d="M 242 152 Q 257 138 272 152" stroke="#1d2a44" stroke-width="7" stroke-linecap="round"
+                  fill="none" />
+                <!-- Closed Smiling Mouth -->
+                <path d="M 175 195 Q 210 228 245 195" stroke="#1d2a44" stroke-width="8" stroke-linecap="round"
+                  fill="none" />
+              </g>
+
+              <!-- 2. The Overlapping Coral/Pink Heart Speech Bubble (floating on the left) -->
+              <g class="illustration-heart-bubble animate-float-slow">
+                <!-- Bubble Path -->
+                <path
+                  d="M 105 110 C 105 85, 65 85, 65 110 C 65 125, 72 132, 80 137 L 72 152 L 92 143 C 100 140, 105 132, 105 110 Z"
+                  fill="#ff7096" />
+                <!-- White Heart in the center -->
+                <path
+                  d="M 85 106 C 83 102, 77 102, 75 106 C 73 110, 77 117, 85 122 C 93 117, 97 110, 95 106 C 93 102, 87 102, 85 106 Z"
+                  fill="#ffffff" />
+              </g>
+
+              <!-- 3. The Blue Capsule Shape (overlapping bottom left) -->
+              <g class="illustration-blue-capsule animate-wobble-subtle-delay">
+                <rect x="40" y="240" width="135" height="70" rx="35" fill="#4ea8de" />
+                <!-- Closed Smiling Eyes (wink style) -->
+                <path d="M 70 270 Q 80 280 90 270" stroke="#1d2a44" stroke-width="5.5" stroke-linecap="round"
+                  fill="none" />
+                <path d="M 115 270 Q 125 280 135 270" stroke="#1d2a44" stroke-width="5.5" stroke-linecap="round"
+                  fill="none" />
+                <!-- Happy Smile -->
+                <path d="M 82 285 Q 102 305 122 285" stroke="#1d2a44" stroke-width="6" stroke-linecap="round"
+                  fill="none" />
+              </g>
+
+              <!-- 4. The Green Puzzle/Clover Shape (overlapping bottom right) -->
+              <g class="illustration-green-puzzle animate-wobble-subtle-delay-2">
+                <path
+                  d="M 280 270 C 265 270, 260 250, 275 240 C 290 230, 310 230, 325 240 C 340 250, 335 270, 320 270 C 335 270, 340 290, 325 300 C 310 310, 290 310, 275 300 C 260 290, 265 270, 280 270 Z"
+                  fill="#06d6a0" />
+                <!-- Smiling Face -->
+                <circle cx="285" cy="265" r="4" fill="#1d2a44" />
+                <circle cx="315" cy="265" r="4" fill="#1d2a44" />
+                <path d="M 292 280 Q 300 287 308 280" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round"
+                  fill="none" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Unified Glassmorphic Accordion Stack -->
+        <div class="faq-right-column">
+          <div class="faq-pill-stack">
+
+            <!-- Item 1: Usia Kritis -->
+            <div class="faq-pill-item">
+              <button class="faq-pill-toggle" aria-expanded="false">
+                <span>Kapan usia kritis pencegahan stunting pada anak?</span>
+                <svg class="faq-chevron" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L13 1" stroke="#1D2A44" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="faq-pill-content">
+                <div class="faq-pill-content-inner">
+                  <p>Masa kritis pencegahan stunting berada pada <strong>1000 Hari Pertama Kehidupan (HPK)</strong>,
+                    yaitu sejak masa konsepsi (dalam kandungan) hingga anak berusia 2 tahun. Selama periode emas ini,
+                    asupan nutrisi makro dan mikro, pemantauan tinggi badan berkala, serta pencegahan infeksi berulang
+                    sangat menentukan tumbuh kembang fisik dan otak si kecil di masa depan.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Makanan Cegah Stunting -->
+            <div class="faq-pill-item">
+              <button class="faq-pill-toggle" aria-expanded="false">
+                <span>Apa jenis makanan terbaik untuk mencegah stunting?</span>
+                <svg class="faq-chevron" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L13 1" stroke="#1D2A44" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="faq-pill-content">
+                <div class="faq-pill-content-inner">
+                  <p>Makanan kaya <strong>protein hewani</strong> adalah kunci utama untuk mencegah stunting secara
+                    efektif. Contohnya adalah telur ayam ras, ikan laut/darah tinggi kalsium (seperti ikan kembung,
+                    tuna, lele), daging ayam, daging sapi, dan susu. Protein hewani memiliki kandungan asam amino
+                    esensial lengkap yang sangat dibutuhkan tulang untuk tumbuh optimal.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Introvert & Pemalu -->
+            <div class="faq-pill-item">
+              <button class="faq-pill-toggle" aria-expanded="false">
+                <span>Apakah anak dengan tipe karakter introvert pasti pemalu?</span>
+                <svg class="faq-chevron" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L13 1" stroke="#1D2A44" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="faq-pill-content">
+                <div class="faq-pill-content-inner">
+                  <p>Tidak sama sekali! <strong>Introvert</strong> merujuk pada bagaimana cara anak memproses energi
+                    mental mereka—yaitu melalui ketenangan dan aktivitas mandiri. Sementara <strong>pemalu</strong>
+                    (<em>shyness</em>) adalah rasa takut atau gugup terhadap penilaian sosial yang negatif. Anak
+                    introvert bisa tumbuh menjadi sosok yang sangat percaya diri, pandai berkomunikasi, dan nyaman
+                    berbicara ketika berada di lingkungannya.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: Stimulasi Introvert -->
+            <div class="faq-pill-item">
+              <button class="faq-pill-toggle" aria-expanded="false">
+                <span>Bagaimana pola asuh terbaik untuk stimulasi balita introvert?</span>
+                <svg class="faq-chevron" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L13 1" stroke="#1D2A44" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="faq-pill-content">
+                <div class="faq-pill-content-inner">
+                  <p>Berikan ruang yang cukup bagi si kecil untuk melakukan aktivitas mandiri yang tenang, seperti
+                    menyusun balok lego, membaca buku bergambar, menggambar, atau merakit puzzle. Dengarkan cerita
+                    imajinasinya dengan penuh perhatian tanpa memotongnya, dan berikan adaptasi secara perlahan sebelum
+                    memperkenalkannya ke lingkungan sosial baru yang ramai.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5: Stimulasi Extrovert -->
+            <div class="faq-pill-item">
+              <button class="faq-pill-toggle" aria-expanded="false">
+                <span>Bagaimana pola asuh terbaik untuk stimulasi balita extrovert?</span>
+                <svg class="faq-chevron" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L13 1" stroke="#1D2A44" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="faq-pill-content">
+                <div class="faq-pill-content-inner">
+                  <p>Anak extrovert membutuhkan stimulus interaksi sosial yang dinamis untuk mengisi energi mentalnya.
+                    Ajaklah si kecil berkumpul dalam permainan berkelompok, fasilitasi kegiatan fisik luar ruangan yang
+                    interaktif bersama teman sebaya, dorong mereka berani bercerita di depan kamera/ponsel, serta
+                    berikan ruang berkomunikasi dua arah yang aktif dan seru.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6: Akurasi AI -->
+            <div class="faq-pill-item">
+              <button class="faq-pill-toggle" aria-expanded="false">
+                <span>Apakah hasil analisis deteksi stunting AI ini 100% akurat?</span>
+                <svg class="faq-chevron" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L13 1" stroke="#1D2A44" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="faq-pill-content">
+                <div class="faq-pill-content-inner">
+                  <p>Analisis stunting Kiddo.ai menggunakan kurva standar pertumbuhan <strong>Z-Score WHO</strong> yang
+                    diakui secara global untuk mengukur rasio tinggi badan berdasarkan umur anak. Hasil ini memberikan
+                    skrining awal dengan tingkat akurasi statistik yang sangat tinggi. Namun, hasil ini bersifat
+                    edukatif dan preventif, sehingga tetap harus dirujuk ke posyandu, puskesmas, atau dokter anak untuk
+                    diagnosis klinis formal.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CTA BANNER SECTION -->
+  <section class="cta-banner-section container">
+    <div class="cta-card">
+      <div class="cta-gradient-overlay"></div>
+      <div class="cta-content text-center animate-fade-in">
+        <h2 class="serif-title">Mulai Kawal Masa Emas Si Kecil Hari&nbsp;Ini</h2>
+        <p>Akses deteksi dini stunting WHO dan pemetaan kepribadian AI terbaik hanya sekali&nbsp;klik.</p>
+        <a href="#interaction-section" class="btn btn-cta-pill">Mulai Deteksi Sekarang</a>
+      </div>
+      <!-- Curved green ribbon path similar to the image -->
+      <div class="cta-ribbon">
+        <svg viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-20,90 Q50,20 130,70 T300,-10" stroke="#4ea8de" stroke-width="12" stroke-linecap="round"
+            opacity="0.3" />
+          <path d="M-10,100 Q60,30 140,80 T310,0" stroke="#2a9d8f" stroke-width="10" stroke-linecap="round"
+            opacity="0.6" />
+          <circle cx="140" cy="40" r="8" fill="#2a9d8f" opacity="0.8" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLIC EDUCATIONAL & TRUST FOOTER -->
+  <footer class="footer container" id="footer-section">
+    <div class="footer-grid">
+      <!-- Left Column (Links) -->
+      <div class="footer-col footer-col-links">
+        <ul>
+          <li><a href="#hero-section">Beranda</a></li>
+          <li><a href="#interaction-section">Layanan AI</a></li>
+          <li><a href="#edu-section">Edukasi &amp; FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle Column (Logo & Contact Info) -->
+      <div class="footer-col footer-col-main text-center">
+        <div class="footer-logo">
+          <!-- Premium Puzzle Face SVG Logo matching the reference image -->
+          <svg class="footer-logo-icon" width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M 30,20 H 50 A 15,15 0 0,1 80,20 H 80 A 10,10 0 0,1 90,30 V 50 A 15,15 0 0,1 90,80 V 80 A 10,10 0 0,1 80,90 H 30 A 10,10 0 0,1 20,80 V 30 A 10,10 0 0,1 30,20 Z"
+              fill="#F07167" />
+            <circle cx="45" cy="50" r="5" fill="#1d2a44" />
+            <circle cx="65" cy="50" r="5" fill="#1d2a44" />
+            <path d="M 48,63 Q 55,70 62,63" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+            <path d="M 38,40 Q 42,33 46,37 Q 50,33 54,37 Q 58,33 62,37" stroke="#1d2a44" stroke-width="3"
+              stroke-linecap="round" fill="none" />
+          </svg>
+          <span class="logo-text">Kiddo<span class="logo-kids">.ai</span></span>
+        </div>
+        <p class="footer-desc">Dukungan tumbuh kembang &amp; potensi karakter balita yang penuh kasih sayang, kapan pun
+          &amp; di mana pun.</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@kiddo.ai" class="footer-email">✉️ hello@kiddo.ai</a>
+        </div>
+
+        <!-- Social media badges removed -->
+      </div>
+
+      <!-- Right Column (Links) -->
+      <div class="footer-col footer-col-links text-right">
+        <ul>
+          <li><a href="https://kemkes.go.id" target="_blank" rel="noopener noreferrer">Pusat Bantuan</a></li>
+          <li><a href="https://www.who.int/tools/child-growth-standards" target="_blank"
+              rel="noopener noreferrer">Standar WHO</a></li>
+          <li><a href="https://bkkbn.go.id" target="_blank" rel="noopener noreferrer">BKKBN RI</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PENTING DISCLAIMER -->
+    <div class="footer-disclaimer text-center">
+      <p>⚠️ <strong>PENTING:</strong> Hasil analisis dari algoritma AI Kiddo.ai ini merupakan skrining deteksi dini
+        publik yang bersifat edukatif. Skrining awal ini TIDAK menggantikan diagnosis dokter anak spesialis, dokter
+        umum, ataupun psikolog anak secara resmi di rumah sakit. Apabila Anda menemukan kejanggalan gizi atau perilaku
+        pada si kecil, segera konsultasikan langsung kepada tenaga kesehatan terlatih.</p>
+      <div class="footer-copy">© 2026 Kiddo.ai. Hak Cipta Dilindungi Undang-Undang.</div>
+    </div>
+
+    <!-- DYNAMIC BOTTOM DECORATIVE SHAPES (EXACTLY MATCHING REFERENCED IMAGE) -->
+    <div class="bottom-decorative-shapes">
+      <!-- Shape 1: Blue Semi-circle -->
+      <div class="shape shape-blue">
+        <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0 60 A 50 50 0 0 1 100 60 Z" fill="#4ea8de" />
+          <path d="M 28 38 Q 36 28 44 38" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 56 38 Q 64 28 72 38" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 44 48 Q 50 54 56 48" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Shape 2: Orange Rounded Pill -->
+      <div class="shape shape-orange">
+        <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="20" width="100" height="60" rx="30" ry="30" fill="#f77f00" />
+          <path d="M 28 46 Q 36 39 44 46" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 56 46 Q 64 39 72 46" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 42 58 Q 50 65 58 58" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Shape 3: Red Tall Cylinder -->
+      <div class="shape shape-red">
+        <svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="80" height="100" rx="40" ry="40" fill="#ef476f" />
+          <path d="M 20 42 Q 28 34 36 42" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 44 42 Q 52 34 60 42" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 32 57 Q 40 64 48 57" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Shape 4: Yellow Parallelogram -->
+      <div class="shape shape-yellow">
+        <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="20 0, 100 0, 80 60, 0 60" fill="#ffd166" />
+        </svg>
+      </div>
+
+      <!-- Shape 5: Dark Indigo Triangle -->
+      <div class="shape shape-indigo-triangle">
+        <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50 0, 100 80, 0 80" fill="#0077b6" />
+        </svg>
+      </div>
+
+      <!-- Shape 6: Green Jigsaw Face -->
+      <div class="shape shape-green">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="15" width="60" height="60" rx="20" ry="20" fill="#06d6a0" />
+          <circle cx="45" cy="15" r="15" fill="#06d6a0" />
+          <circle cx="15" cy="45" r="15" fill="#06d6a0" />
+          <circle cx="75" cy="45" r="15" fill="#06d6a0" />
+          <path d="M 30 40 Q 38 32 46 40" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 54 40 Q 62 32 70 40" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 40 56 Q 50 66 60 56" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Shape 7: Pink Semi-circle -->
+      <div class="shape shape-pink">
+        <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0 80 A 60 60 0 0 1 120 80 Z" fill="#ff85a1" />
+          <path d="M 32 46 Q 44 33 56 46" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 68 46 Q 80 33 92 46" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+          <path d="M 50 60 Q 60 70 70 60" stroke="#1d2a44" stroke-width="4.5" stroke-linecap="round" fill="none" />
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Unified JS Script -->
+  <script src="/static/app.js"></script>
+</body>
+
+</html>
