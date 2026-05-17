@@ -1,10 +1,6 @@
 # 🍼 Kiddo.ai — Platform Pintar Deteksi Tumbuh Kembang & Karakter Balita
 
 <p align="center">
-  <img src="static/assets/child_yellow.png" alt="Kiddo.ai Logo" width="120" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);"/>
-</p>
-
-<p align="center">
   <strong>Solusi Cerdas Tumbuh Kembang Si Kecil Berbasis Kecerdasan Buatan (AI) & Standar WHO</strong>
 </p>
 
@@ -146,5 +142,5 @@ Aplikasi ini dikembangkan dengan cinta untuk kemajuan kesehatan dan tumbuh kemba
 ---
 
 <p align="center">
-  Made with ❤️ by Jullystian & pair programmed with Antigravity AI (Google DeepMind Team)
+  Made with ❤️ by Jullystian
 </p>
